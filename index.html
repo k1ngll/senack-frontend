@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF--8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENACK - Jogo da Cobrinha</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="gameWrapper">
+        <h1 id="mainTitle">SENACK - Jogo da Cobrinha</h1>
+        
+        <div id="gameArea">
+            <div id="gameCanvasContainer">
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+                
+                <div id="gameOverOverlay" class="hidden">
+                    <h2>GAME OVER</h2>
+                    <p>Sua Pontuação: <span id="finalScoreDisplay">0</span></p>
+                    <input type="text" id="playerNameInput" placeholder="Digite seu Nome" maxlength="15">
+                    <button id="submitScoreBtn">Enviar</button>
+                    <button id="playAgainBtn">Jogar Novamente</button>
+                </div>
+
+                <div id="startOverlay">
+                    <h2>SENACK</h2>
+                    <p>Pressione uma seta ou botão para começar!</p>
+                </div>
+            </div>
+
+            <div id="sidebar">
+                <div class="score-box">
+                    PONTOS
+                    <span id="currentScoreDisplay">0</span>
+                </div>
+                <div class="score-box">
+                    RECORDE
+                    <span id="highScoreDisplay">0</span>
+                </div>
+                <div class="leaderboard-box">
+                    <p>Ranking</p>
+                    <button id="resetRankingBtn">Resetar Ranking</button>
+                    <div id="leaderboard"></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="controls">
+            <button id="upBtn" class="control-btn">^</button>
+            <div class="horizontal-controls">
+                <button id="leftBtn" class="control-btn"><</button>
+                <button id="downBtn" class="control-btn">v</button>
+                <button id="rightBtn" class="control-btn">></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
