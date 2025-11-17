@@ -36,4 +36,4 @@ Navegue até o diretório frontend/.
 
 Abra o arquivo index.html em seu navegador.
 
-A aplicação está configurada para se comunicar com o backend no seguinte endereço de API: https://senack-backend.vercel.app/api/...
+A aplicação está configurada para se comunicar com o backend no seguinte endereço de API: https://senack-backend.vercel.app/api/
